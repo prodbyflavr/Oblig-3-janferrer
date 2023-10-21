@@ -5,7 +5,7 @@ html{
   
 h1{
     font-family:'Times New Roman', Times, serif;
-    font-size: 23px;
+    font-size: 15px;
 font-style: normal;
 font-weight: 800;
 line-height: normal;
@@ -21,7 +21,7 @@ h1{
 }
 h2{
     font-family:'Times New Roman', Times, serif;
-    font-size: 23px;
+    font-size: 13px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -48,7 +48,7 @@ body {
    }
    
    header, main, footer{
-       padding: 1rem;
+     
    }
    
    header {
@@ -84,19 +84,51 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    flex-direction: row;
 }
 
 .mad li {
+    display: flex;
     margin: 0;
+ font-family: 'Times New Roman', Times, serif;
+
+
+}
+.mad li a {
+    text-decoration: none; 
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .mad li {
+        font-size: medium;
+        flex-wrap: wrap;
+
+        text-decoration: none;
+        
+
+    }
 }
 
 .mad a {
     display: block;
 }
 
+/*.lei-seg {list-style: none;}*/
+
 .navbar-icons {
-    display: flex; /* Apply flex to this div */
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+   margin-right: 10px
+   
+   
 }
+
+
+
+
+
 
 
    .navbar-left {
@@ -104,11 +136,44 @@ body {
     justify-content: flex-start;
  
 }
-.show-in-mobile
-{
 
-    display: none;
+
+.show-in-mobile {
+    list-style-type: none;
+    display: flex; 
+    position: relative;
+    top: 50px;
+    right: 40px;
 }
+
+
+@media (min-width: 768px) {
+    .show-in-mobile {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .show-in-mobile {
+        display: flex; 
+        flex-wrap: wrap;
+    
+    }
+}
+
+@media (max-width: 500 px) {
+    .show-in-mobile {
+        
+        display: flex; 
+        justify-content: left;
+        left: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
 /* 
    #logo{
        text-decoration: none;
@@ -122,20 +187,22 @@ body {
  #logo {
   
     background-color: black;
-    width: 150px;
-    height: 40px; 
+    width: 109px;
+    height: 20px; 
     display: flex;
+    flex-shrink: initial;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-right: 8px;
     /* position: relative; */
     border: none;
     top: 15px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    /*-fikk hjelp av chatgpt*/
- 
+    left: 100%; 
+    
  }
+ 
+
 
  
 
@@ -162,7 +229,7 @@ margin-bottom: 100px }
     display: flex;
     align-items: flex-start;
     justify-content: left;
-    color: white; /* Text color for the menu items */
+    color: white; 
     
   }
 
@@ -208,7 +275,6 @@ text-decoration: none;
     border-radius: none;
     display: flex;
     justify-content: center;
-    flex-shrink: initial;
     align-self: center;
     flex-direction: row;
     text-align: center;
@@ -219,8 +285,9 @@ text-decoration: none;
     color: white ;
     border-radius: 5px;
     font-weight: 25;
-    width: 150px;
-    height: 60px;
+    font-size: small;
+    width: 100px;
+    height: 30px;
     margin: 0 auto;
     line-height: 2;
     font-family: 'Times New Roman', Times, serif
@@ -231,7 +298,6 @@ text-decoration: none;
    .black-btn:hover {
     background-color: rgb(99, 99, 99);
 }
-
 
 
 
@@ -266,23 +332,32 @@ width: 100%;
 min-width: 100%; 
 
    }
-   @media only screen and (max-width:375px){
+   @media only screen and (max-width:768 px){
    .hide-in-mobile{
     display: none;
-   }
-   .show-in-mobile{
-    display: flex;
+   }}
+
+
+@media (max-width: 768px) {
+    .mad li a{
+        display: none;
+    }
 }
+    
 .logo
 {
 
 
 }
+
+
+
+    
+footer {
+background-color: black;
 }
-
-
    
-   @media only screen and (min-width:600px){
+   @media only screen and (min-width:786px){
     #grid-container{
         grid-template-areas: "header header header" "main ." "footer footer footer"; 
     }
@@ -313,7 +388,20 @@ min-width: 100%;
            width: 50%;
            align-self: center;
        }
-   
+       .flex-section-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .flex-section-2 img{
+        width: 50%;
+    }
+
+    .flex-section section{
+        width: 50%;
+        align-self: center;
+    }
+    .fle
        .right img {
            order: 1;
        }
