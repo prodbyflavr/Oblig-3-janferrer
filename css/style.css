@@ -74,13 +74,16 @@ body {
        flex-wrap: wrap;
        set-styling-type
    }
-   .høyre {
+   .navbar-left {
+    display: flex;
+    justify-content: flex-start;
+ 
+}
 
-
-   }
    #logo{
        text-decoration: none;
        font-family: 'Times New Roman', Times, serif;
+       display: inline;
 
    }
 
@@ -96,12 +99,45 @@ body {
     align-items: center;
     position: relative;
     border: none;
-    top: 0; 
+    top: 15px; 
     left: 50%; 
     transform: translateX(-50%); 
     /*-fikk hjelp av chatgpt*/
  
  }
+
+ 
+
+.søkeknapp {list-style-type: none;
+    display: inline;
+margin-right: 10px;
+
+}
+.handlekurv {list-style-type: none;
+    display: inline;
+margin-left: 5px;
+margin-bottom: 100px }
+
+.navbar-left {
+    position: relative;
+    top: 0;
+    left: 0;
+  
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar-left li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    color: white; /* Text color for the menu items */
+    
+  }
+
+
+  
+ 
 
 
    
