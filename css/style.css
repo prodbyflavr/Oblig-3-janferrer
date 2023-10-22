@@ -39,12 +39,12 @@ h2{
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
    }
    
    #grid-container {
        display: grid;
        grid-template-areas: "header" "main" "footer" ;
-       padding: 1rem;
    }
    
    header, main, footer{
@@ -56,6 +56,8 @@ body {
        font-weight: 600;
        grid-area: header;
    }
+
+
    
    header nav {
        display: flex;
@@ -81,17 +83,22 @@ body {
    .mad {
     list-style: none;
     display: flex;
+
     justify-content: space-between;
     align-items: center;
     padding: 0;
     flex-direction: row;
+ 
 }
 
 .mad li {
     display: flex;
+
     margin: 0;
  font-family: 'Times New Roman', Times, serif;
-
+margin-left:auto;
+margin-right: auto;
+;
 
 }
 .mad li a {
@@ -139,11 +146,15 @@ body {
 
 
 .show-in-mobile {
+    position: relative;
+
     list-style-type: none;
     display: flex; 
-    position: relative;
+    justify-content: left;
+    flex-wrap: wrap;    
+
     top: 50px;
-    right: 40px;
+ left: 1%;
 }
 
 
@@ -260,16 +271,21 @@ margin-bottom: 100px }
    .responsive a{
        color: white;
        display: inline-block;
-       padding: 1rem;
+       padding: 0rem;
        text-decoration: none;
    }
    
 
   
 
+   .sko {
+    position: relative;
+}
 
 
    .black-btn{
+    z-index: 1;
+    position: relative;
 text-decoration: none;
     border: none;
     border-radius: none;
@@ -292,6 +308,37 @@ text-decoration: none;
     line-height: 2;
     font-family: 'Times New Roman', Times, serif
    
+   
+    
+   }
+
+   .black-btn-2{
+    z-index: 0;
+    position: relative;
+text-decoration: none;
+    border: none;
+    border-radius: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 125px;
+    margin-right: 125px; 
+    cursor: pointer;
+    bottom: 55px;
+   display:;
+    color: white ;
+    border-radius: 5px;
+    font-weight: 25;
+    font-size: small;
+    width: 60px;
+    height: 70px;
+    margin: 0 auto;
+    line-height: 2;
+    font-family: 'Times New Roman', Times, serif
+   /*chatgpt foreslo z-index : 0 og z-index: 1 for at det bildet skal være bak button*/
+   
     
    }
 
@@ -299,7 +346,10 @@ text-decoration: none;
     background-color: rgb(99, 99, 99);
 }
 
+.flex-section,.flex-section-2,.flex-section-3 {
 
+    filter: brightness(0);
+}
 
 
 
@@ -331,6 +381,32 @@ max-width: 100%;
 width: 100%;
 min-width: 100%; 
 
+   }
+
+   #services h2 {
+
+color: white;
+   }
+
+
+   #services-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-around;
+   }
+
+   #services-2 article{ 
+max-width: 100%;
+width: 100%;
+min-width: 100%; 
+
+   }
+
+   #services-2 h2 {
+
+color: white;
    }
    @media only screen and (max-width:768 px){
    .hide-in-mobile{
@@ -364,13 +440,13 @@ background-color: black;
        .navbar{
            display: flex;
            flex-direction: row;
-           gap: 1rem;
+   
            list-style: none;
            margin: 0;
        }
       
    
-       #ham, .fa-magnifying-glass{
+       .fa-magnifying-glass{
            display: flex;
        }
    
@@ -397,14 +473,16 @@ background-color: black;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 70%; /* Set the container's width to 70% of the viewport width */
-        margin: 0 auto; /* Center the container horizontally */
+        width: 70%; 
+        margin: 0 auto; 
+        margin-bottom: 20px;
+     
     }
     
     .flex-section-3 img {
-        max-width: 100%; /* Ensure the images don't exceed the container's width */
-        width: 45%; /* Set the image width to 45% of the container's width (to make them smaller) */
-        margin: 0 2.5%; /* Add space between the images (smaller distance) */
+        max-width: 100%; 
+        width: 45%; 
+        margin: 0 2.5%; 
     }
     
     .flex-section section{
