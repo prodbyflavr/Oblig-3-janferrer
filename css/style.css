@@ -376,27 +376,37 @@ background-color: black;
    
        .flex-section {
            display: flex;
-           flex-direction: row;
-           justify-content: space-between;
+           justify-content: space-evenly;
+           margin-bottom: 50px;
        }
    
        .flex-section img{
-           width: 50%;
+           width: 40%;
        }
    
-       .flex-section section{
-           width: 50%;
-           align-self: center;
-       }
+      
        .flex-section-2 {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
     }
+   
     .flex-section-2 img{
-        width: 50%;
+        width: 10%;
     }
-
+    .flex-section-3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%; /* Set the container's width to 70% of the viewport width */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+    
+    .flex-section-3 img {
+        max-width: 100%; /* Ensure the images don't exceed the container's width */
+        width: 45%; /* Set the image width to 45% of the container's width (to make them smaller) */
+        margin: 0 2.5%; /* Add space between the images (smaller distance) */
+    }
+    
     .flex-section section{
         width: 50%;
         align-self: center;
