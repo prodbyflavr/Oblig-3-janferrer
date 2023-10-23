@@ -400,6 +400,8 @@ text-decoration: none;
     display: flex;
     flex-wrap: wrap; /* Allow images to wrap to the next line in mobile mode */
     justify-content: center; /* Center the images horizontally */
+ 
+    
 }
 
 .flex-section-3 img {
@@ -407,6 +409,8 @@ text-decoration: none;
     max-width: 100%; /* Ensure the images don't exceed the container's width */
     padding: 25px; /* Add space around each image */
     box-sizing: border-box; /* Include padding in the image's width */
+ filter: brightness(0);
+ margin-bottom: 30px;
 }
 
   
@@ -592,8 +596,9 @@ background-color: black;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        margin-top: 100px;
+        margin-top: 110px;
         margin-right: 10px;
+        font-family: 'Times New Roman', Times, serif;
     }
 
     .icons {
