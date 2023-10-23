@@ -60,7 +60,7 @@ body {
    }
 
    header h2{
-z-index: sticky;
+
    
 }
 
@@ -153,7 +153,7 @@ margin-right: auto;
  
 }
 
-
+/*chat gpt foreslo*/
 .show-in-mobile {
     position: relative;
 
@@ -181,15 +181,7 @@ margin-right: auto;
     }
 }
 
-@media (max-width: 500 px) {
-    .show-in-mobile {
-        
-        display: flex; 
-        justify-content: left;
-        left: 20px;
-        flex-wrap: wrap;
-    }
-}
+
 
 
 
@@ -203,7 +195,7 @@ margin-right: auto;
    } */
 
  
-
+/*logo er tatt fra forelesningen til Ann Charlotte, Foreleser i Høgskolen i Østfold*/
  #logo {
   
     background-color: black;
@@ -311,7 +303,7 @@ margin-bottom: 100px }
     position: relative;
 }
 
-
+/*ville ha dette over bilde med hjelp av z-index*/
    .black-btn{
     z-index: 1;
     position: relative;
@@ -325,7 +317,7 @@ text-decoration: none;
     text-align: center;
     margin-left: 125px;
     margin-right: 125px; 
-    cursor: pointer;
+    
     background-color: black;
     color: white ;
     border-radius: 5px;
@@ -340,7 +332,7 @@ text-decoration: none;
    
     
    }
-
+/* styling til black button*/
    .black-btn-2{
     z-index: 0;
     position: relative;
@@ -354,7 +346,7 @@ text-decoration: none;
     text-align: center;
     margin-left: 125px;
     margin-right: 125px; 
-    cursor: pointer;
+   
     bottom: 55px;
    display:;
     color: white ;
@@ -364,7 +356,7 @@ text-decoration: none;
     width: 60px;
     height: 70px;
     margin: 0 auto;
-    line-height: 2;
+ 
     font-family: 'Times New Roman', Times, serif
    /*chatgpt foreslo z-index : 0 og z-index: 1 for at det bildet skal være bak button*/
    
@@ -415,7 +407,7 @@ text-decoration: none;
  margin-bottom: 30px;
 }
 
-  
+  /* Dette har jeg tatt fra Ann Charlotte da ho viste oss dette i forelesning*/
    
    main {
        grid-area: main;
@@ -427,6 +419,14 @@ text-decoration: none;
    
    footer {
        grid-area: footer;
+       margin-top: 30px;
+   }
+   .services-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-around;;
    }
 
    #services{
@@ -444,33 +444,6 @@ min-width: 100%;
 
    }
 
-   #services h2 {
-
-color: white;
-position: relative;
-left: 21%;
-   }
-
-
-   #services-2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: black;
-    justify-content: space-around;
-   }
-
-   #services-2 article{ 
-max-width: 100%;
-width: 100%;
-min-width: 100%; 
-
-   }
-
-   #services-2 h2 {
-
-color: white;
-   }
    @media only screen and (max-width:768 px){
    .hide-in-mobile{
     display: none;
@@ -500,10 +473,10 @@ justify-content: center;
 footer {
 background-color: black;
 }
-   
+   /* Grid container for evt columns */
    @media only screen and (min-width:768px){
     #grid-container{
-        grid-template-areas: "header header header" "main ." "footer footer footer"; 
+        grid-template-areas: "header header header" "main" "footer footer footer"; 
     }
        .navbar{
            display: flex;
@@ -625,7 +598,9 @@ background-color: black;
 /* mobil */
 
     
-@media only screen and (max-width: 767px){.button{
+@media only screen and (max-width: 767px){
+    
+    .button{
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -647,7 +622,42 @@ left: 8%;
     text-align: center;
     margin-bottom: 10px;
 
-}}
+
+}
+
+/*chat gpt foreslo dette for media querty */
+
+
+.mailing-list-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.HeadingColor{
+color: #ffffff;
+}
+.om {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+  flex-wrap: wrap;
+    
+}
+
+.om li{
+    list-style-type: none;
+}
+.om-oss-left, .om-oss-right {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+  
+
+
+}
+}
     .icons {
         list-style: none;
         padding: 0;
@@ -668,4 +678,39 @@ left: 8%;
         width: 90%;
         margin-left: 22px;
         height: auto;
+    }
+/* mailing list */
+    .mailing-list-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+.HeadingColor{
+color: #ffffff;
+}
+    .om {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: white;
+      
+        
+    }
+    
+    .om li{
+        list-style-type: none;
+    }
+    .om-oss-left, .om-oss-right {
+        flex: 1;
+        padding: 20px;
+        margin: 10px;
+      
+    }
+    
+
+    /* leveranse og retur */
+
+    .velkommen , .leveranse-informasjon , .fraktmetoder, .leveringstider, .returprosedyrer , .kontakt-oss, .elsker-dere {
+        flex-wrap: wrap;
     }
