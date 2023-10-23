@@ -86,6 +86,8 @@ z-index: sticky;
     display: inline;
    } */
 
+   /* ting som jeg ikke trenger, men tenker å bruke kanskje */
+
    
    .mad {
     list-style: none;
@@ -624,8 +626,23 @@ background-color: black;
 
     
 @media only screen and (max-width: 767px){.button{
-    display: none;
-    
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+left: 8%;
+    justify-content: center;
+    margin-left: 10%;
+    background-color: #383838;
+    color: rgb(255, 255, 255)000;
+    padding: 22px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 110px;
+    margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+
 }}
     .icons {
         list-style: none;
